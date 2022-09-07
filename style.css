@@ -1,0 +1,405 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: sans-serif;
+    height: 100vh; 
+}
+
+
+.slider-container{
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+
+.left-slide{
+    height: 100%;
+    width: 45%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.5s ease-in-out;
+}
+
+.left-slide > div{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+
+.left-slide h1{
+    transform: translate(-30%, -370%);
+    font-size: 40px;
+    margin-bottom: 10px;
+    margin-top: -30px;
+    color: black;
+}
+
+.left-slide p{
+    transform: translate(-2%, -500%);
+}
+
+.left-slide h2{
+    transform: translate(-105%, -500%);
+    color: aqua;
+}
+.left-slide h3{
+    transform: translate(-100%, -600%);
+    color: aqua;
+}
+
+.artifacts{
+    transform: translate(-150%, -400%);
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.KazuhaName{
+    margin-top: 100px;
+    /* margin-bottom: 10px; */
+}
+.VentiName{
+    margin-bottom:20px;
+    padding-bottom: 10px;
+}
+
+.XiaoName{
+    margin-top: 10px;
+    /* margin-bottom: 10px; */
+}
+
+.RaidenName{
+    margin-top: 20px;
+    margin-left: 150px;
+    padding-bottom: 10px;
+    /* margin-bottom: 10px; */
+}
+
+.FischlName{
+    margin-top: 10px;
+    padding-bottom: 10px;
+    /* margin-bottom: 10px; */
+}
+.MikoName{
+    margin-top: 10px;
+    padding-bottom: 10px;
+    /* margin-bottom: 10px; */
+}
+.artifactheader{
+    padding-left: 10px;
+    padding-bottom: 5px;
+}
+
+
+.KazuhaPP{
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 20px;
+    margin-left: -40px;
+    font-size: medium;
+    
+}
+
+.VentiPP{
+    font-family: 'Times New Roman', Times, serif;
+    padding-top:1px;
+    padding-right: 100px;
+    font-size: medium;
+    
+}
+
+.XiaoPP{
+    font-family: 'Times New Roman', Times, serif;
+    padding-right: 50px;
+    font-size: medium;
+    
+}
+
+.GanyuPP{
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 20px;
+    margin-left: -80px;
+    font-size: medium;
+}
+
+.AyakaPP{
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 20px;
+    margin-left: -80px;
+    font-size: medium;
+    
+}
+
+.EulaPP{
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 20px;
+    margin-left: -140px;
+    font-size: medium;
+}
+
+
+.weapons{
+    transform: translate(-140%,-300%);
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.weaponsayaka{
+    transform: translate(-120%,-350%);
+}
+
+.weaponseula{
+    transform: translate(-120%,-290%);
+}
+
+.artifactseula{
+    transform: translate(-280%,-800%);
+}
+
+
+.artifactsayaka{
+    transform: translate(-160%,-350%);
+}
+.artifactsventi{
+    transform: translate(-150%, -800%);
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+
+.weaponsventi{
+    transform: translate(-180%, -300%);
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.weaponsFischl{
+    transform: translate(-200%,-400%);
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.artifactsxiao{
+    transform: translate(-150%, -800%);
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.artifactsganyu{
+    transform: translate(-75%, -700%);
+}
+
+
+.weaponsxiao{
+    transform: translate(-230%, -300%);
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+/* .left-slide ol{
+    transform: translate(-150%, -300%);
+    
+}
+
+.left-slide li{
+    transform: translate(0%,600%);
+    margin-top: 5px;
+    margin-bottom: 10px;
+} */
+
+.right-slide{
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: 45%;
+    width: 55%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.right-slide > div{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+button{
+    background-color: white;
+    border: none;
+    color: gray;
+    cursor: pointer;
+    font-size: 30px;
+    padding: 15;
+}
+
+button:hover{
+    color: #222;
+}
+
+button:focus
+{
+    outline: none;
+}
+
+
+
+.slider-container .action-buttons button{
+    position: absolute;
+    left: 45%;
+    top: 50%;
+    z-index: 100;
+}
+
+.slider-container .action-buttons .down-button{
+    transform: translateX(-220%);
+    /* border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px; */
+    height: 90px;
+    opacity: 80%;
+  width: 30px;
+  border: 5px solid black;
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+
+
+.down-button::before,
+.down-button::after {
+  content: "";
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  height: 10px;
+  width: 10px;
+  transform: translate(-50%, -100%) rotate(45deg);
+  border: 2px solid black;
+  border-top: transparent;
+  border-left: transparent;
+  animation: scroll-down 1s ease-in-out infinite;
+}
+
+.down-button::before {
+  top: 30%;
+  animation-delay: 0.3s;
+  /* animation: scroll-down 1s ease-in-out infinite; */
+}
+
+@keyframes scroll-down {
+  0% {
+    /* top:20%; */
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 1;
+  }
+
+  60% {
+    opacity: 1;
+  }
+
+  100% {
+    top: 90%;
+    opacity: 0;
+  }
+}
+
+
+
+
+.slider-container .action-buttons .up-button{
+    transform: translateY(-100%);
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    
+}
+
+
+.buttonforredirect{
+    font-size: 30px;
+}
+
+.weponheader{
+    padding-left: 10px;
+    padding-bottom: 7px;
+}
+
+.electrodiv{
+    color: paleviolet;
+    border: 5px solid;
+    padding: 0.2em 0.4em;
+    border-radius: 0.25em;
+    text-shadow: 0 0 0.2em red;
+    box-shadow: 
+    inset 0 0 0.2em 0 currentColor,
+    0 0 0.5em 0;
+}
+
+.electrodiv:focus{
+    background-color: currentColor;
+    background-color: white;
+    text-shadow: 0;
+}
+
+
+.electrodiv::after{
+
+content: '';
+position: absolute;
+background-color: red;
+
+}
+
+
+
+.cryodiv{
+    color: blueviolet;
+    border: 5px solid aqua;
+    padding: 0.2em 0.4em;
+    border-radius: 0.25em;
+    text-shadow: 0 0 0.1em aqua;
+    box-shadow: 
+    inset 0 0 0.2em 0 currentColor,
+    0 0 0.5em 0;
+}
+
+.cryodiv:focus{
+    background-color: currentColor;
+    background-color: white;
+    text-shadow: 0;
+}
+
+.anemodiv{
+    color: blueviolet;
+    border: 5px solid aqua;
+    padding: 0.2em 0.4em;
+    border-radius: 0.25em;
+    text-shadow: 0 0 0.1em aqua;
+    box-shadow: 
+    inset 0 0 0.2em 0 currentColor,
+    0 0 0.5em 0;
+}
+
+.anemodiv:focus{
+    background-color: currentColor;
+    background-color: white;
+    text-shadow: 0;
+}
+
+
+.cryodiv:focus{
+    background-color: currentColor;
+    background-color: white;
+    text-shadow: 0;
+}
